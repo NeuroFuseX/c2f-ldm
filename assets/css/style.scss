@@ -1,0 +1,77 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+/* 设置表格的样式 */
+.gallery-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.gallery-table th, .gallery-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd; /* 添加表格边框 */
+}
+
+.gallery-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.gallery-table td {
+  background-color: white;
+}
+
+/* 设置左侧标题列样式 */
+.left-header {
+  width: 15%; /* 设定左侧列的宽度，比其他列略小 */
+  font-weight: bold;
+  //background-color: #f8f8f8;
+  padding-left: 20px; /* 为左侧标题添加一些内边距 */
+  text-align: center; /* 水平居中 */
+  vertical-align: middle; /* 垂直居中 */
+  display: table-cell; /* 强制该单元格为表格单元格布局 */
+  height: 100%; /* 确保单元格的高度填满 */
+}
+
+/* 设置每个图片和音频的布局 */
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 200px; /* 限制图片宽度 */
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-caption {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* 确保图片和音频排布在表格中，每行4个 */
+@media (min-width: 600px) {
+  .gallery-table td:not(.left-header) {
+    width: 21%; /* 每列占21%的宽度（4列） */
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-table td {
+    width: 50%; /* 小屏幕上每行放两个图片音频 */
+  }
+}
