@@ -27,10 +27,10 @@
 
 /* 设置左侧标题列样式 */
 .left-header {
-  width: 15%; /* 设定左侧列的宽度，比其他列略小 */
+  width: 10%; /* 设定左侧列的宽度，比其他列略小 */
   font-weight: bold;
   //background-color: #f8f8f8;
-  padding-left: 20px; /* 为左侧标题添加一些内边距 */
+  //padding-left: 0px; /* 为左侧标题添加一些内边距 */
   text-align: center; /* 水平居中 */
   vertical-align: middle; /* 垂直居中 */
   display: table-cell; /* 强制该单元格为表格单元格布局 */
@@ -55,6 +55,11 @@
   font-size: 14px;
   margin-top: 8px;
   color: #333;
+}
+
+.explanation {
+  text-align: left !important;
+  font-weight: bold;
 }
 
 audio {
