@@ -56,7 +56,7 @@ layout: default
     </tr>
     <tr>
       <th class="left-header">Comparison</th>
-      <th colspan="4" class="explanation"> &nbsp;&nbsp; Stimulus is the sound of a cow. C2F-LDM is not identical, but its frequency is similar. </th>
+      <th colspan="4" class="explanation"> &nbsp;&nbsp; C2F-LDM reconstructs the spectral distribution of Stimulus very well (although not cattle calls), significantly better than Fine-LDM and LiR (which always sounds like noise, omitted below). </th>
     </tr>
     <tr>
       <td class="left-header">Reconstruction</td>
